@@ -1,0 +1,7 @@
+.background-container {
+    background-image: url("./images/weather_background_3.jpg");
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+    color: white; 
+}

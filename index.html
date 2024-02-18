@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="./js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <div class="bg-warning-subtle">
+
+        <div class="container d-flex justify-content-center text-success mt-4">
+            <h1>Weather App</h1>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container d-flex justify-content-center mt-4">
+
+            <form action="" name="testData" id="test-data-form">
+                <label for="city">City Name</label>
+                <input type="text" name="city" id="city">
+                <button class="btn btn-success mx-3" type="submit" id="submit-button">Get Weather</button>
+            </form>
+
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container mt-5 mb-5">
+
+            <table class="table table-striped">
+
+                <thead>
+                    <tr>
+                        <th>City</th>
+                        <th>Forcast</th>
+                        <th>Temperature</th>
+                        <th>Low Temperature</th>
+                        <th>High Temperature</th>
+                        <th>Humidity</th>
+                    </tr>
+                </thead>
+
+                <tbody class="weather-data">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
