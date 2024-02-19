@@ -8,17 +8,17 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
     <script src="./js/main.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
 </head>
 
-<body>
+<body class="background-container">
 
-    <div class="bg-warning-subtle">
+    <div>
 
-        <div class="container d-flex justify-content-center text-success mt-4">
+        <div class="container d-flex justify-content-center bg-warning mt-4">
             <h1>Weather App</h1>
         </div>
 
@@ -28,7 +28,7 @@
         <div class="container d-flex justify-content-center mt-4">
 
             <form action="" name="testData" id="test-data-form">
-                <label for="city">City Name</label>
+                <label class="text-black" for="city">City Name</label>
                 <input type="text" name="city" id="city">
                 <button class="btn btn-success mx-3" type="submit" id="submit-button">Get Weather</button>
             </form>
@@ -47,8 +47,8 @@
                         <th>City</th>
                         <th>Forcast</th>
                         <th>Temperature</th>
-                        <th>Low Temperature</th>
-                        <th>High Temperature</th>
+                        <th>Low</th>
+                        <th>High</th>
                         <th>Humidity</th>
                     </tr>
                 </thead>
