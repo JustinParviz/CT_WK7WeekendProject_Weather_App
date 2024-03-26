@@ -1,7 +1,50 @@
+header {
+    background: #00060A;
+    color: white; 
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+
+
 .background-container {
-    background-image: url("./images/weather_background_15.jpg");
+    background-image: url("./media/weather_background_v1.jpg");
     background-size: cover;
-    height: 820px;
+    height: 790px;
     background-position: center;
+    padding-top: 10px;
     color: white; 
 }
+
+
+.weather-data tr:hover {
+    background-color: yellow;
+}
+
+
+/* ** Code for having a video play in the background (Work-in-progress: Does not work yet) **
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#background-video {
+    position: fixed;  or absolute
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+    color: white;
+} */
+
+
+
+
