@@ -1,18 +1,17 @@
-header {
-    background: #00060A;
-    color: white; 
-    padding-top: 10px;
-    padding-bottom: 60px;
+body, html {
+    height: 100%;
+    margin: 0;
 }
 
 
-.background-container {
-    background-image: url("./media/weather_background_v1.jpg");
-    background-size: cover;
-    height: 790px;
-    background-position: center;
-    padding-top: 10px;
+header {
+    background: #002944;
     color: white; 
+    width: 100%;
+    padding-top: 10px;   
+    padding-bottom: 20px;
+    border-top: 2px solid yellow;
+    border-bottom: 2px solid yellow
 }
 
 
@@ -21,30 +20,42 @@ header {
 }
 
 
-/* ** Code for having a video play in the background (Work-in-progress: Does not work yet) **
-
-body, html {
-    height: 100%;
-    margin: 0;
+/*  ** Code for having a video play in the background (Work-in-progress: Does not work yet) **  */
+.video-container {
+    position: relative;       /* can also try fixed or absolute */
+    width: 100%;
+    height: 100%;      /* Full height */
+    overflow: hidden;
 }
 
-#background-video {
-    position: fixed;  or absolute
-    right: 0;
-    bottom: 0;
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     min-width: 100%;
     min-height: 100%;
-    z-index: -1;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Ensure video is behind content */
+    transform: translate(-50%, -50%);
 }
 
 .content {
-    position: relative;
-    z-index: 1;
-    padding: 20px;
-    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-} */
+    text-align: center;
+    z-index: 100; /* Ensure content is above video */
+}
 
 
-
+footer {
+    background: #002944;
+    padding:60px;
+    border-top: 2px solid yellow;
+    border-bottom: 2px solid yellow
+}
 

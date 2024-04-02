@@ -16,35 +16,36 @@
 
 <body>
 
-    <!-- ** Code for having a video play in the background **
-    <video autoplay loop muted id="background-video"> 
-        <source src="/css/media/weather_background_video.mp4" type="video/mp4">
-        
-    </video> -->
-
 
     <header>
-    <div class="container d-flex justify-content-center mt-4">
-        <h1>Weather App</h1>
-    </div>
-    </header>
 
-    
+        <div class="container d-flex justify-content-center mt-4">
+            <h1>Weather App</h1>
+        </div>
 
-    <div class="background-container">
-
+        <br>
+        <br>
+        
         <div class="container d-flex justify-content-center">
 
             <form action="" name="testData" id="test-data-form">
-                <label class="text-white" for="city"><strong>City Name</strong></label>
+                <label class="text-white" for="city"><strong>City Name:</strong></label>
                 <input type="text" name="city" id="city">
                 <button class="btn btn-primary mx-3" type="submit" id="submit-button">Get Weather</button>
             </form>
 
         </div>
 
-        <br>
-        <br>
+    </header>
+
+
+    <!-- ** Code for having a video play in the background ** -->
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="/css/media/WeatherApp_background_video_v1.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
 
         <div class="container mt-5 mb-5">
 
@@ -69,8 +70,10 @@
 
         </div>
 
+
     </div>
 
+    <footer></footer>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>

@@ -8,7 +8,7 @@ const getData = async (city) => {
 
 const DOMElements = {
     'weatherApp1' : '.weather-data'
-} 
+}
 
 
 const createList = (name, description, temp, temp_min, temp_max, humidity) => {
